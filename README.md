@@ -13,4 +13,4 @@ Folder-structure:
 
 Documentation:
 -
-I did not documentated this code so far, because it is very lightweight and easy to understand. If you are interested in UML-diagrams for a better understanding feel free to send me a message. If they are needed, i will create them for you.
+I did not documented this code so far, because it is very lightweight and easy to understand. If you are interested in UML-diagrams for a better understanding feel free to send me a message. If they are needed, i will create them for you.
