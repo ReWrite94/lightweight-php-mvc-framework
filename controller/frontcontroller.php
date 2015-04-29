@@ -20,7 +20,7 @@ class FrontController extends AbstractController {
     
     public function execute() {
         if (isset($_SESSION["ID"])) {
-			// if player is User (logged in), call the Usercontroller. You can also add other Controller (Admincontroller for backend for example).
+			// if  User is logged in, call the Usercontroller. You can also add other Controller (Admincontroller for backend).
 			$controller = new UserController($this->template);           
             $controller->execute();                
         }
