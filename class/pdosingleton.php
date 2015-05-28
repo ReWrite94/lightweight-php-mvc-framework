@@ -6,7 +6,7 @@
  * https://github.com/ReWrite94/lightweight-php-mvc-framework
 */
 
-class PDOSingleton {
+class PDOSingleton{
 
     private static $connection = null;
 	private static $host = "localhost";

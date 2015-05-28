@@ -6,13 +6,13 @@
  * https://github.com/ReWrite94/lightweight-php-mvc-framework
 */
 
-class UserController extends AbstractController { 
+class UserController extends BaseController { 
     public function execute() {    
-        $action = $_GET["page"];
-    
+		$action = filter_input(INPUT_GET, "page");
+		
         switch ($action) {
             case 'index' : {
-                $this->template->addParam("title", "Startseite");
+                $this->template->addParam("title", "Home");
                 $this->template->setContent("view/user/home.php");
                 $this->template->render();
                 break;
@@ -23,7 +23,7 @@ class UserController extends AbstractController {
                 break;
             }
             default : {
-                $this->template->addParam("title", "Startseite");
+                $this->template->addParam("title", "Home");
                 $this->template->setContent("view/user/home.php");
                 $this->template->render();
                 break;

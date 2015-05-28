@@ -12,7 +12,7 @@ class Template {
     private $content;
     private $params;
     
-    public function __construct($content = "404 - Not found!!",$baseView = "view/base.php") {
+    public function __construct($content = "404 - Not found!",$baseView = "view/base.php") {
         $this->baseView = $baseView;
         $this->content = $content;
     }

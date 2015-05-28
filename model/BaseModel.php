@@ -6,9 +6,9 @@
  * https://github.com/ReWrite94/lightweight-php-mvc-framework
 */
 
-require_once 'class/pdosingleton.php';
+require_once 'class/PDOSingleton.php';
 
-abstract class AbstractModel {
+abstract class BaseModel {
     
     protected $connection;
 

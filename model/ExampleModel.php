@@ -6,9 +6,9 @@
  * https://github.com/ReWrite94/lightweight-php-mvc-framework
 */
  
-include_once 'model/abstractmodel.php';
+include_once 'model/BaseModel.php';
 
-class ExampleModel extends AbstractModel {
+class ExampleModel extends BaseModel {
 
 	//sql strings
     private static $sql_findAll = 'SELECT * FROM Example';
@@ -23,8 +23,7 @@ class ExampleModel extends AbstractModel {
 		parent::__construct();
     }
 	
-	// functions to recieve and execute database stuff
-
+	// functions to execute database stuff
     public static function allExamples() {
         $connection = PDOSingleton::connection();
         

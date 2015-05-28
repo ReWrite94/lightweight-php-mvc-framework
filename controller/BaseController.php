@@ -6,7 +6,7 @@
  * https://github.com/ReWrite94/lightweight-php-mvc-framework
 */
 
-abstract class AbstractController {
+abstract class BaseController {
     
     protected $template; 
     public function __construct($template) {
