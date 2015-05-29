@@ -22,21 +22,21 @@ class FrontController extends BaseController {
     public function execute() {
 		if (filter_input(INPUT_GET, "ajax")) {
 			$controller = new AsyncController($this->template);           
-            $controller->execute();   
+			$controller->execute();   
 			return;
 		}
 	
         if (isset($_SESSION["ID"])) {
-			// if  User is logged in, execute the UserController. You can also add other Controller (AdminController for backend).
-			$controller = new UserController($this->template);           
-            $controller->execute();                
+		// if  User is logged in, execute the UserController. You can also add other Controller (AdminController for backend).
+		$controller = new UserController($this->template);           
+		$controller->execute();                
         }
         else
         {
-			//here you should handle register/login or use another controller! You could also execute the UserController if you don't need authentification.
-			$this->template->addParam("title", "Login");
-			$this->template->setContent('view/user/login.php');
-			$this->template->render();
+		//here you should handle register/login or use another controller! You could also execute the UserController if you don't need authentification.
+		$this->template->addParam("title", "Login");
+		$this->template->setContent('view/user/login.php');
+		$this->template->render();
         }
     }
 }
