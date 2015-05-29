@@ -8,7 +8,7 @@
 
 class UserController extends BaseController { 
     public function execute() {    
-		$action = filter_input(INPUT_GET, "page");
+	$action = filter_input(INPUT_GET, "page");
 		
         switch ($action) {
             case 'index' : {
